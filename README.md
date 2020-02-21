@@ -2,7 +2,7 @@
 
 Here you can find our job from the hackathon :)
 
-## Installation
+## About
 
 We are registered like SunnySurge on [HackTUES 6 website](https://hacktues.com/).
 
