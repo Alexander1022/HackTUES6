@@ -7,5 +7,5 @@ Here you can find our job from the hackathon :)
 We are registered like SunnySurge on [HackTUES 6 website](https://hacktues.com/).
 
 ```bash
-©CyberWave @ HackTUES 6
+© CyberWave @ HackTUES 6
 ```
