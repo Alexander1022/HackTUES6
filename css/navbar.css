@@ -27,7 +27,7 @@ body {
 }
   
 @media screen and (max-width: 600px) {
-    .nav_bar a:not(:first-child) {display: none;}
+    .nav_bar a:not(:first-child) {/*display: none;*/}
     
 }
   

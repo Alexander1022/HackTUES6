@@ -1,28 +1,21 @@
 {
     "name": "PWA made for HackTUES",
     "short_name": "CovidNews",
-    "icons": [{
-      "src": "images/hello-icon-128.png",
+    "icons": [
+      {
+      "src": "images/icon-128.png",
         "sizes": "128x128",
         "type": "image/png"
       }, {
-        "src": "images/hello-icon-144.png",
-        "sizes": "144x144",
+        "src": "images/icon-64.png",
+        "sizes": "64x64",
         "type": "image/png"
       }, {
-        "src": "images/hello-icon-152.png",
-        "sizes": "152x152",
-        "type": "image/png"
-      }, {
-        "src": "images/hello-icon-192.png",
-        "sizes": "192x192",
-        "type": "image/png"
-      }, {
-        "src": "images/hello-icon-256.png",
+        "src": "images/icon-256.png",
         "sizes": "256x256",
         "type": "image/png"
       }, {
-        "src": "images/hello-icon-512.png",
+        "src": "images/icon-512.png",
         "sizes": "512x512",
         "type": "image/png"
       }],

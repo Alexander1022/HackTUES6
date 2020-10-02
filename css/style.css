@@ -134,3 +134,8 @@ body {
   display: block;
   text-align: right;
 }
+
+.title_of_news_container {
+  font-size: 40px;
+  border-bottom: 5px solid black;
+}

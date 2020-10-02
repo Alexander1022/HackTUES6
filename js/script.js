@@ -1,12 +1,4 @@
 
-if ('serviceWorker' in navigator) {
-  window.addEventListener('load', function() {
-    navigator.serviceWorker.register('/sw.js').then(function(registration) {
-      console.log('ServiceWorker registration successful with scope: ', registration.scope);
-    }, function(err) {
-  });
-}
-
 /*var firebaseConfig = {
     apiKey: "AIzaSyC1xe-sbWGq8GujxcfsGmmexMf6ZdICkLY",
     authDomain: "covidnews-e9205.firebaseapp.com",
@@ -16,10 +8,10 @@ if ('serviceWorker' in navigator) {
     messagingSenderId: "525444307116",
     appId: "1:525444307116:web:d1d0c2d10fce817f2b6709",
     measurementId: "G-28D8123FTK"
-}; */
+}; 
 
 firebase.initializeApp(firebaseConfig);
-firebase.analytics();
+firebase.analytics();*/
 
 var slideIndex = 1;
 showSlides(slideIndex);
@@ -48,11 +40,13 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 
-function myFunction() {
+//функцията отдолу е за navbar-a
+  function myFunction() {
     var x = document.getElementById("navigation");
     if (x.className === "nav_bar") {
-      x.className += " responsive";
-    } else {
+        x.className += " responsive";
+    } 
+    else {
       x.className = "nav_bar";
     }
   }
