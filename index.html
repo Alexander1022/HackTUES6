@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CovidNews</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <!--Firebase App & Analytics-->
+    <script src="https://www.gstatic.com/firebasejs/7.22.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.22.0/firebase-analytics.js"></script>
+    <!--Firebase Authentification-->
+    <script src="https://www.gstatic.com/firebasejs/ui/4.6.1/firebase-ui-auth.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/4.6.1/firebase-ui-auth.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="nav_bar" id="navigation">   
+        <a>News</a>
+        <a>Statistics</a>
+        <a>Chat</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    
+    <div class="slideshow">
+        
+      <div class="slide fade">
+         <img src="\images\corona.jpg" style="width:100%">
+      </div>
+
+      <div class="slide fade">
+         <img src="\images\covid_test.jpg" style="width:100%">
+      </div>
+
+      <div class="slide fade">
+        <img src="\images\rising.jpg" style="width:100%">
+     </div>
+
+      <div class="slide fade">
+         <img src="\images\person_mask.jpg" style="width:100%">
+      </div>   
+      
+    </div>
+
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+      <br>
+        
+      <div style="text-align: center;">
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+           <span class="dot"></span> 
+     </div>
+    </div>
+
+    <div class="newsContainer">
+        <h1 class = "title_news">News Title</h1>
+        <p class = "content_news">News content</p>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script src="js/news_fetching.js"></script>
+</body>
+</html>   
