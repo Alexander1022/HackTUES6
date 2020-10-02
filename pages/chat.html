@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="../css/chat.css">
+  <link rel="stylesheet" href="../css/navbar.css">
+  <script type='text/javascript' src='https://cdn.scaledrone.com/scaledrone.min.js'></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" /> 
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Alpha Chat</title>
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#ffffff">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+</head>
+<body>
+        
+    <div class="nav_bar" id="navigation">
+        <a href="chat.html">Chat</a>
+        <a href="stats.html">Statistics</a>
+        <a href="../index.html">News</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+<center><h1>Qurantine Chat</h1></center>
+    
+<div class="info_panel"> 
+  <div class="members-count">-</div>
+  <div class="members-list">-</div>
+</div>
+    
+  <div class="messages"></div> 
+    
+  <form class="message-form" onsubmit="return false;">
+    <input class="message-form__input" placeholder="Aa" type="text"/>
+    <button class="message-form__button" type="submit">Send</button>
+  </form>
+  <script src="../js/chat.js"></script>
+    
+</body>
+</html>

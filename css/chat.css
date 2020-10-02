@@ -1,0 +1,135 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 13px;
+    display: flex;
+    flex-direction: column;
+    max-height: 100vh;
+    font-family: 'Rubik', sans-serif;
+    background: #64BB6A;
+  }
+  
+  ::-webkit-scrollbar {
+      display: none;
+    }
+  
+  .members-count,
+  .members-list,
+  .messages {
+    border: 5px solid #0000;
+    padding: 15px;
+    margin-bottom: 15px;
+    color : white;
+  }
+  
+  .messages {
+    flex-shrink: 3;
+    overflow: auto;
+  }
+  
+  .message {
+    padding: 15px 0;
+    margin: 15px;
+    color: white;
+    border: 0px solid #ffffff;
+    background-color:  #37782C;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px black;
+    overflow: hidden;
+  }
+  .message .member {
+    display: inline-block;
+    border: 0px solid white;
+    color: black;
+    background : #37782C;
+    border-radius: 5px;
+    margin : 5px;
+  }
+  
+  .member {
+    padding-right: 20px;
+    position: relative;
+  }
+  
+  .message-form {
+    display: flex;
+    flex-shrink: 1;
+    margin-bottom: 10px;
+    margin-top: auto;
+  }
+  .message-form__input {
+    flex-grow: 1;
+    border: 5px solid #0000;
+    padding: 10px 15px;
+    background : white;
+    border: 2px solid white;
+    border-radius: 25px;
+    box-shadow: 2px 8px black;
+    outline: none;
+  } 
+  
+  .message-form__input:hover {
+    border: 2px solid black;
+  }
+  
+  input[type="text"] {
+    font-family: 'Rubik', sans-serif;
+    text-align: left;
+    font-size: 15px;
+  }
+  
+  button[type="submit"] {
+    font-family: 'Rubik', sans-serif;
+    font-size: 20px;
+  }
+  
+  .message-form__button {
+    margin: 10px;
+    background: #2c3e50;
+    color: white;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all .35s;
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 5px;
+    box-shadow: 2px 6px black;
+    outline: none;
+    min-height: 30px;
+  }
+  
+  .message-form__button:hover{
+      color: #2c3e50;
+  }
+  
+  
+  h1{
+      color : #37782C;
+      font-size: 50px;
+      display: inline;
+  }
+    
+    h2{
+        color : #37782C;
+        font-size: 50px;
+    }
+  
+  .inline-div {
+      display: block;
+      text-align: center;
+  }
+  
+  h4{
+    color : #37782C;
+    font-size: 10px;
+    display: inline-block;
+    text-align: center;
+  }
+    
+   .info_panel {
+      border-bottom: 1px dashed #37782C;
+      text-align: left;
+      display:inline-block;
+  }
+
+  
