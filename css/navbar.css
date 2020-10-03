@@ -6,6 +6,7 @@ body {
 .nav_bar {
     background-color: #64BB6A;
     overflow: hidden;
+    font-family: 'Rubik', sans-serif;
 }
   
 .nav_bar a {

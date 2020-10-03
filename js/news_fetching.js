@@ -9,7 +9,6 @@ fetch('https://newsapi.org/v2/top-headlines?country=bg&category=health&apiKey=05
         document.querySelector(".sub_title").innerHTML = 'Новина : ' + article.description;
         document.querySelector(".day").innerHTML = 'Новината е от ' + article.publishedAt;
         console.log('Сегашната новина : ' + article.title + article.description)
-
     })
 })
 .catch(err => {

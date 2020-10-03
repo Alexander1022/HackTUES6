@@ -1,0 +1,142 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Rubik', sans-serif;
+}
+
+.input{
+    justify-content: center;
+    text-align: center;
+    padding-top: 20px;
+}
+
+
+input[type="text"]
+{
+    width: 35%;
+    min-width: fit-content;
+    min-height: 35px;
+    height: 25px;
+    border: 2px solid #024064;
+    border-radius: 30px;
+    font-family: 'Rubik', sans-serif;
+    text-align: center;
+    font-weight: bold;
+    outline: none;
+    transition: 0.35s;
+}
+
+input[type="Submit"]
+{
+    width: 5%;
+    min-width: fit-content;
+    min-height: 35px;
+    height: 25px;
+    border: 2px solid #024064;
+    border-radius: 30px;
+    font-family: 'Rubik', sans-serif;
+    text-align: center;
+    font-weight: bold;
+    outline: none;
+    transition: 0.1s;
+    cursor: pointer;
+    background-color: white;
+}
+
+input[type="Submit"]:hover
+{
+    border: 3px solid rgb(1, 47, 73);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 0.7fr 1.3fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "left left left right"
+      "left left left right"
+      "left left left right";
+  }
+.left { grid-area: left; }
+.right { grid-area: right; }
+
+.content {
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.div_country {
+    margin-top: 45px;
+    text-align: center;
+}
+
+.div_cases {
+    border: 5px solid #faab51;
+    border-radius: 20px;
+    margin: 20px;
+    background-color:white;
+    padding: 5px 5px 5px 5px;
+    font-size: 10px;
+    color: #faab51;
+    flex: 2;
+    text-align: center;
+}
+
+.div_deaths {
+    border: 5px solid #024064;
+    border-radius: 20px;
+    margin: 20px;
+    background-color:white;
+    padding: 5px 5px 5px 5px;
+    font-size: 10px;
+    color: #024064;
+    flex: 2;
+    text-align: center;
+}
+.div_rec {
+    border: 5px solid #64BB6A;
+    border-radius: 20px;
+    margin: 20px;
+    background-color: white;
+    padding: 5px 5px 5px 5px;
+    font-size: 10px;
+    display: flex;
+    color: #64BB6A;
+    flex: 2;
+    text-align: center;
+}
+
+#rightChart {
+    position: flex;
+    border: 2px solid red;
+    max-width: 700px;
+    max-height: 700px;
+    font-size: 2000px;
+    margin: 50px;
+}
+
+.table {
+    margin-top: 20px;
+    overflow: scroll;
+    color: #6a5d5d;
+    background-color: white;
+    height: 400px;
+  }
+  
+  .table tr {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .table td {
+    padding: 0.5rem;
+    border: none;
+  }
+  
+  .table tr:nth-of-type(odd) {
+    background-color: #f3f2f8;
