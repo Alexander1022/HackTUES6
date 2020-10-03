@@ -3,23 +3,23 @@ body {
 }
   
 .nav_bar {
-    overflow: hidden;
     background-color: #64BB6A;
+    overflow: hidden;
 }
   
 .nav_bar a {
-    float: right;
-    display: block;
     color: #FEFED3;
-    text-align: center;
-    padding: 18px 20px;
-    text-decoration: none;
     font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    float: right;
+    display: block;  
+    padding: 18px 20px;
 }
   
 .nav_bar a:hover {
-    background-color: #9FD983;
     color: #37782C;
+    background-color: #9FD983;    
 }
 
 .nav_bar .icon {
@@ -27,7 +27,7 @@ body {
 }
   
 @media screen and (max-width: 600px) {
-    .nav_bar a:not(:first-child) {/*display: none;*/}
+    .nav_bar a:not(:first-child) {}
     
 }
   
@@ -36,7 +36,7 @@ body {
     
 }
 .nav_bar.responsive a {
-      float: none;
-      display: block;
-      text-align: right;
+    text-align: right;
+    float: none;
+    display: block;
 }
