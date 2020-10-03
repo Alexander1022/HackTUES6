@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,9 +10,12 @@
     <div class="registration_page">
         <div class="form">
           <form class="register_form" action="save_profile.php" method="post">
-            <input type="text" name="username" placeholder="Userame" required/>
-            <input type="text" name="email" placeholder="Email address" required/>
-            <input type="password" name="password" placeholder="Password" required/>
+            <input type="text" name="name" placeholder="Userame"
+                required/><?php echo($_POST['nameErr']); ?>
+            <input type="text" name="email" placeholder="Email address"
+                required/><?php echo($_POST['emailErr']); ?>
+            <input type="password" name="password" placeholder="Password"
+                required/><?php echo($_POST['passErr']); ?>
             <input type="password" name="repeat_password" placeholder="Repeat password" required/>
             <button>Create</button>
             <p class="message">Already registered? <a href="login.html">Sign In</a></p>
