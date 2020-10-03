@@ -1,135 +1,135 @@
 body {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 13px;
-    display: flex;
-    flex-direction: column;
-    max-height: 100vh;
-    font-family: 'Rubik', sans-serif;
-    background: #64BB6A;
-  }
+  box-sizing: border-box;
+  margin: 0;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  max-height: 100vh;
+  font-family: 'Rubik', sans-serif;
+  background: #024064;
+}
   
-  ::-webkit-scrollbar {
-      display: none;
-    }
+::-webkit-scrollbar {
+  display: none;
+}
   
-  .members-count,
-  .members-list,
-  .messages {
-    border: 5px solid #0000;
-    padding: 15px;
-    margin-bottom: 15px;
-    color : white;
-  }
+.members-count,
+.members-list,
+.messages {
+  border: 5px solid #0000;
+  padding: 15px;
+  margin-bottom: 15px;
+  color : #FEFED3;
+}
   
-  .messages {
-    flex-shrink: 3;
-    overflow: auto;
-  }
+.messages {
+  flex-shrink: 3;
+  overflow: auto;
+}
   
-  .message {
-    padding: 15px 0;
-    margin: 15px;
-    color: white;
-    border: 0px solid #ffffff;
-    background-color:  #37782C;
-    border-radius: 10px;
-    box-shadow: 5px 5px 15px black;
-    overflow: hidden;
-  }
-  .message .member {
-    display: inline-block;
-    border: 0px solid white;
-    color: black;
-    background : #37782C;
-    border-radius: 5px;
-    margin : 5px;
-  }
+.message {
+  padding: 15px 0;
+  margin: 15px;
+  color: #024064;
+  border: 0px solid #FEFED3;
+  background-color:  #9fd983;
+  border-radius: 10px;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.753);
+  overflow: hidden;
+}
+.message .member {
+  display: inline-block;
+  border: 0px solid #FEFED3;
+  color: black;
+  background : #9fd983;
+  border-radius: 5px;
+  margin : 5px;
+}
   
-  .member {
-    padding-right: 20px;
-    position: relative;
-  }
+.member {
+  padding-right: 20px;
+  position: relative;
+}
   
-  .message-form {
-    display: flex;
-    flex-shrink: 1;
-    margin-bottom: 10px;
-    margin-top: auto;
-  }
-  .message-form__input {
-    flex-grow: 1;
-    border: 5px solid #0000;
-    padding: 10px 15px;
-    background : white;
-    border: 2px solid white;
-    border-radius: 25px;
-    box-shadow: 2px 8px black;
-    outline: none;
-  } 
+.message-form {
+  display: flex;
+  flex-shrink: 1;
+  margin-bottom: 10px;
+  margin-top: auto;
+}
+.message-form__input {
+  flex-grow: 1;
+  border: 5px solid #0000;
+  padding: 10px 15px;
+  background : #FEFED3;
+  border: 2px solid #FEFED3;
+  border-radius: 25px;
+  outline: none;
+  transition: all .35s;
+} 
   
-  .message-form__input:hover {
-    border: 2px solid black;
-  }
+.message-form__input:hover {
+  border: 2px solid black;
+}
   
-  input[type="text"] {
-    font-family: 'Rubik', sans-serif;
-    text-align: left;
-    font-size: 15px;
-  }
+input[type="text"] {
+  font-family: 'Rubik', sans-serif;
+  text-align: left;
+  font-size: 15px;
+}
   
-  button[type="submit"] {
-    font-family: 'Rubik', sans-serif;
-    font-size: 20px;
-  }
+button[type="submit"] {
+  font-family: 'Rubik', sans-serif;
+  font-size: 20px;
+}
   
-  .message-form__button {
-    margin: 10px;
-    background: #2c3e50;
-    color: white;
-    cursor: pointer;
-    overflow: hidden;
-    transition: all .35s;
-    text-align: center;
-    border: 2px solid white;
-    border-radius: 5px;
-    box-shadow: 2px 6px black;
-    outline: none;
-    min-height: 30px;
-  }
+.message-form__button {
+  margin: 10px;
+  background: white;
+  color: #37782C;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all .35s;
+  text-align: center;
+  border: 2px solid white;
+  border-radius: 5px;
+  outline: none;
+  min-height: 30px;
+}
   
-  .message-form__button:hover{
-      color: #2c3e50;
-  }
+.message-form__button:hover{
+  color: black;
+  border: 2px solid black;
+}
   
   
-  h1{
-      color : #37782C;
-      font-size: 50px;
-      display: inline;
+h1{
+  color : #9fd983;
+  font-size: 50px;
+  display: inline;
   }
     
-    h2{
-        color : #37782C;
-        font-size: 50px;
-    }
-  
-  .inline-div {
-      display: block;
-      text-align: center;
+h2{
+    color : #9fd983;
+    font-size: 50px;
   }
   
-  h4{
-    color : #37782C;
-    font-size: 10px;
-    display: inline-block;
-    text-align: center;
+.inline-div {
+  display: block;
+  text-align: center;
+}
+  
+h4{
+  color : #9fd983;
+  font-size: 10px;
+  display: inline-block;
+  text-align: center;
   }
     
-   .info_panel {
-      border-bottom: 1px dashed #37782C;
-      text-align: left;
-      display:inline-block;
-  }
+.info_panel {
+  border-bottom: 1px dashed #37782C;
+  text-align: left;
+  display:inline-block;
+}
 
   

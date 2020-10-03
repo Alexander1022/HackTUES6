@@ -5,20 +5,18 @@
     <link rel="stylesheet" href="register.css">
 </head>
 <body>
-    <form method="post" action="save_profile.php">
-        <div class="registration_page">
-            <div class="form">
-              <form class="register_form">
-                <input type="text" placeholder="Userame"/>
-                <input type="text" placeholder="Email address"/>
-                <input type="password" placeholder="Password"/>
-                <input type="password" placeholder="Repeat password"/>
-                <button>Create</button>
-                <p class="message">Already registered? <a href="#">Sign In</a></p>
-              </form>
-            </div>         
+    <div class="registration_page">
+        <div class="form">
+          <form class="register_form" action="save_profile.php" method="post">
+            <input type="text" name="username" placeholder="Userame"/>
+            <input type="text" name="email" placeholder="Email address"/>
+            <input type="password" name="password" placeholder="Password"/>
+            <input type="password" name="repeat_password" placeholder="Repeat password"/>
+            <button>Create</button>
+            <p class="message">Already registered? <a href="#">Sign In</a></p>
+          </form>
         </div>
-    </form>
+    </div>
 </body>
 </html>
 
