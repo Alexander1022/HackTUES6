@@ -2,17 +2,28 @@
 <html>
 <head>
     <title>CovidNews - Register</title>
-<head>
+    <link rel="stylesheet" href="register.css">
+</head>
 <body>
     <form method="post" action="save_profile.php">
-        Name: <input type="text" name="name">
-        E-mail: <input type="email" name="email">
-        Website: <input type="text" name="website">
-        Comment: <textarea name="comment" rows="5" cols="40"></textarea>
-        Gender:
-        <input type="radio" name="gender" value="female">Female
-        <input type="radio" name="gender" value="male">Male
-        <input type="radio" name="gender"value="other">Other
-        <input type="submit", name="submit" value="Submit">
+        <div class="registration_page">
+            <div class="form">
+              <form class="register_form">
+                <input type="text" placeholder="Userame"/>
+                <input type="text" placeholder="Email address"/>
+                <input type="password" placeholder="Password"/>
+                <input type="password" placeholder="Repeat password"/>
+                <button>Create</button>
+                <p class="message">Already registered? <a href="#">Sign In</a></p>
+              </form>
+            </div>         
+        </div>
     </form>
-<body>
+</body>
+</html>
+
+<script>
+    $('.message a').click(function(){
+    $('form').animate({height: "toggle", opacity: "toggle"}, "slow");
+    });
+</script>
