@@ -61,8 +61,8 @@ body {
   flex-grow: 1;
   border: 5px solid #0000;
   padding: 10px 15px;
-  background : #FEFED3;
-  border: 2px solid #FEFED3;
+  background : white;
+  border: 2px solid white;
   border-radius: 25px;
   outline: none;
   transition: all .35s;
