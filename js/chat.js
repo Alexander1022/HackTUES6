@@ -20,6 +20,7 @@ const drone = new ScaleDrone(CLIENT_ID, {
         return console.error(error);
       }
       console.log('Успешно се включихте в чата!');
+      console.log('Quarantine Chat');
     });
   
     room.on('members', m => {

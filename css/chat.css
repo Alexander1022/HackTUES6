@@ -64,8 +64,8 @@ body {
     background : white;
     border: 2px solid white;
     border-radius: 25px;
-    box-shadow: 2px 8px black;
     outline: none;
+    transition: all .35s;
   } 
   
   .message-form__input:hover {
@@ -85,21 +85,21 @@ body {
   
   .message-form__button {
     margin: 10px;
-    background: #2c3e50;
-    color: white;
+    background: white;
+    color: #37782C;
     cursor: pointer;
     overflow: hidden;
     transition: all .35s;
     text-align: center;
     border: 2px solid white;
     border-radius: 5px;
-    box-shadow: 2px 6px black;
     outline: none;
     min-height: 30px;
   }
   
   .message-form__button:hover{
-      color: #2c3e50;
+      color: black;
+      border: 2px solid black;
   }
   
   
