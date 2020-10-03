@@ -33,7 +33,7 @@
     <meta name="msapplication-TileImage" content="mstile-144x144.png" />
     <meta name="msapplication-square70x70logo" content="mstile-70x70.png" />
     <meta name="msapplication-square150x150logo" content="mstile-150x150.png" />
-    <meta name="msapplication-wide310x150logo" content="mstile-310x150.png" />  
+    <meta name="msapplication-wide310x150logo" content="mstile-310x150.png" />
     <meta name="msapplication-square310x310logo" content="mstile-310x310.png" />
 
 
@@ -48,8 +48,39 @@
             <i class="fa fa-bars"></i>
         </a>
     </div>
-    
-    <div class="simple-ss" id="simple-ss"></div>
+
+    <div class="slideshow">
+
+      <div class="slide fade">
+         <img src="\images\corona.jpg" style="width:100%">
+      </div>
+
+      <div class="slide fade">
+         <img src="\images\covid_test.jpg" style="width:100%">
+      </div>
+
+      <div class="slide fade">
+        <img src="\images\rising.jpg" style="width:100%">
+     </div>
+
+      <div class="slide fade">
+         <img src="\images\person_mask.jpg" style="width:100%">
+      </div>
+
+    </div>
+
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+      <br>
+
+      <div style="text-align: center;">
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+           <span class="dot"></span>
+     </div>
+    </div>
 
     <div class="newsContainer">
         <div class="title_of_news_container"
@@ -63,4 +94,4 @@
     <script src="js/script.js"></script>
     <script src="js/news_fetching.js"></script>
 </body>
-</html>   
+</html>
