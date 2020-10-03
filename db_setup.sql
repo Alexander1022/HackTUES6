@@ -1,3 +1,10 @@
+DROP DATABASE IF EXISTS CovidNews;
+CREATE DATABASE CovidNews;
+USE CovidNews;
+
+CREATE USER 'covidnews'@'localhost' IDENTIFIED BY 'covidnews';
+GRANT ALL PRIVILEGES ON covidnews.* TO 'covidnews'@'localhost';
+
 CREATE TABLE profiles
 (
 	id INT Primary Key NOT NULL auto_increment,
