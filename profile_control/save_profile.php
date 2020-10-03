@@ -1,8 +1,8 @@
 <?php
 require_once '../db_connect.php';
 
-$q = $sql->prepare("INSERT INTO profiles(username, email, password, country)
-                    VALUES(:username, :email, :password, :country)");
+$q = $sql->prepare("INSERT INTO profiles(username, email, password, country_id)
+                    VALUES(:username, :email, :password, :country_id)");
 
 function test_input($data) {
     $data = trim($data);
@@ -53,12 +53,12 @@ echo('
     document.getElementById("myForm").submit();
 </script>
 ');
-
+// die(print_r($_REQUEST));
 $q->execute([
     "username" => $_REQUEST['name'],
     "email" => $_REQUEST["email"],
     "password" => hash('sha256', $_REQUEST["password"]),
-    "country" => isset($_REQUEST["country"]) ? $_REQUEST["country"] : ""
+    "country_id" => $_REQUEST['country_id']
 ]);
 
 header("Location: /profile_control/login.html");

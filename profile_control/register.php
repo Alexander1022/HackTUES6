@@ -1,4 +1,14 @@
+<?php
+require_once "../db_connect.php";
+$query = "SELECT id, name FROM countries";
+$stmt = $sql->prepare($query);
 
+// die(print_r($stmt));
+$stmt->execute();
+$countries = $stmt->fetchAll();
+// $countries = $stmt->fetch(PDO::FETCH_ASSOC);
+// die(print_r($countries));
+?>
 
 <!DOCTYPE html>
 <html>
@@ -17,6 +27,13 @@
             <input type="password" name="password" placeholder="Password"
                 required/><?php echo($_POST['passErr']); ?>
             <input type="password" name="repeat_password" placeholder="Repeat password" required/>
+
+            <select name="country_id">
+                <?php foreach($countries as $country): ?>
+                    <option value="<?= $country['id']; ?>"><?= $country['name']; ?></option>
+                <?php endforeach; ?>
+            </select>
+
             <button>Create</button>
             <p class="message">Already registered? <a href="login.html">Sign In</a></p>
           </form>
