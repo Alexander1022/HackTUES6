@@ -11,5 +11,5 @@ $q->execute([
     "country" => isset($_REQUEST["country"]) ? $_REQUEST["country"] : NULL
 ]);
 
-header("Location: /login");
+header("Location: /profile_control/login.html");
 exit();
