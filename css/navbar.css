@@ -5,18 +5,19 @@ body {
   
 .nav_bar {
     background-color: #64BB6A;
-    font-family: 'Verdana', sans-serif;
+    font-family: 'Rubik', sans-serif;
     overflow: hidden;
+    display: flex;
+    justify-content: space-between;
 }
   
 .nav_bar a {
+    float: right;
+    display: block; 
     color: #FEFED3;
-    background-color: #64BB6A;
     font-size: 20px;
     text-align: center;
-    text-decoration: none;
-    float: right;
-    display: block;  
+    text-decoration: none; 
     padding: 18px 20px;
 }
   
@@ -31,9 +32,10 @@ body {
 
 .nav_bar.responsive a {
     text-align: right;
-    float: right;
+    float: none;
     display: block;
 }
+
 
   
 @media screen and (max-width: 600px) {

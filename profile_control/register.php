@@ -99,7 +99,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $stmt->bindParam(':country_id', $_REQUEST['country_id']);
 
             if($stmt->execute()){
-                header("location: login.html");
+                header("location: login.php");
             } else{
                 echo "Something went wrong. Please try again later.";
             }
@@ -138,7 +138,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             </select>
 
             <button>Create</button>
-            <p class="message">Already registered? <a href="login.html">Sign In</a></p>
+            <p class="message">Already registered? <a href="login.php">Sign In</a></p>
           </form>
         </div>
     </div>
