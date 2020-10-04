@@ -55,9 +55,6 @@ input[type="Submit"]:hover
     margin-right: auto;
 }
 
-.left { grid-area: left; }
-.right { grid-area: right; }
-
 .content {
     justify-content: center;
     padding: 5px;
