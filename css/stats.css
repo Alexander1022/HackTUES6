@@ -1,9 +1,10 @@
 body{
-    font-family: 'Verdana', sans-serif;
+    font-family: 'Rubik', sans-serif;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     margin: 0;
+    background-color: white;
 }
 
 .input{
@@ -45,6 +46,11 @@ input[type="Submit"]
     cursor: pointer;
 }
 
+input[type="text"]:hover
+{
+    border: 3px solid rgb(1, 47, 73);
+}
+
 input[type="Submit"]:hover
 {
     border: 3px solid rgb(1, 47, 73);
@@ -65,41 +71,59 @@ input[type="Submit"]:hover
 .div_country {
     text-align: center;
     margin-top: 45px;
+    transition: 1s;
 }
 
 .country {
     font-size: 30px;
+    color: #024064;
+}
+.country:hover { 
+    color: black;
 }
 
 .div_cases {
-    color: #9FD983;
-    background-color:white;
+    color: white;
+    background-color:#048ba8;
     font-size: 9px;
     text-align: center;
-    border: 3px solid #9FD983;
+    border: 3px solid #048ba8;
     border-radius: 20px;
     padding: 5px 5px 5px 5px;
     flex: 2;
     margin: 20px;
 }
 
+.div_cases:hover {
+    border: 3px solid black;
+    transition-timing-function: ease-in-out;
+    transition: 0.35s;
+}
+
 .div_deaths {
-    color: #024064;
-    background-color:white;
+    color: white;
+    background-color: #e63946;
     font-size: 9px;
     text-align: center;
-    border: 3px solid #024064;
+    border: 3px solid #e63946;
     border-radius: 20px;
     padding: 5px 5px 5px 5px;
     flex: 2;
     margin: 20px;
 }
+
+.div_deaths:hover {
+    border: 3px solid black;
+    transition-timing-function: ease-in-out;
+    transition: 0.35s;
+}
+
 .div_rec {
-    color: #64BB6A;
-    background-color: white;
+    color: white;
+    background-color: #2a9d8f;
     font-size: 9px;
     text-align: center;
-    border: 3px solid #64BB6A;
+    border: 3px solid #2a9d8f;
     border-radius: 20px;
     padding: 5px 5px 5px 5px;
     margin: 20px;
@@ -107,13 +131,10 @@ input[type="Submit"]:hover
     flex: 2;
 }
 
-#rightChart {
-    border: 2px solid red;
-    max-width: 700px;
-    max-height: 700px;
-    font-size: 2000px;
-    position: flex;
-    margin: 50px;
+.div_rec:hover {
+    border: 3px solid black;
+    transition-timing-function: ease-in-out;
+    transition: 0.35s;
 }
 
 .table {
@@ -136,4 +157,13 @@ input[type="Submit"]:hover
   
 .table tr:nth-of-type(odd) {
     background-color: #f3f2f8;
+}
+
+.hyperChart {
+    position: relative;
+    height:60vh; 
+    width:50vw;
+    border: 1px solid black;
+    margin: 0 auto !important;
+    text-align: center;
 }
