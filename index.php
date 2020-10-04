@@ -1,3 +1,10 @@
+<?php
+session_start();
+if($_SERVER["REQUEST_METHOD"] == "POST" && $_SESSION['loggedin'] == 1)
+{
+    session_destroy();
+}
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -36,10 +43,21 @@
   <div class="nav_bar" id="navigation">
     <img src="./images/COVID_NEWS-transperent2.png" style="width:200px; height:53px;  background-color: #64BB6A; margin-left: 15px; margin-top: 3px;">
     <div>
-      <a href="../profile_control/login.php">Login</a>
-      <a href="pages/chat.html">Chat</a>
-      <a href="pages/stats.html">Statistics</a>
-      <a href="../index.html">News</a>
+      <?php
+      session_start();
+      if ($_SESSION['loggedin'] == 1) {
+            echo('
+            <a><form class="" action='.$_SERVER['PHP_SELF'].' method="post">
+                <input type="hidden" name="logout" value="true">
+                <input type="submit" name="submit" value="Logout">
+            </form></a>
+            ');
+      } else {
+            echo('<a href="../profile_control/login.php">Login</a>');
+      }?>
+      <a href="pages/chat.php">Chat</a>
+      <a href="pages/stats.php">Statistics</a>
+      <a href="../">News</a>
       <a href="javascript:void(0);" class="icon" onclick="myFunction()">
           <i class="fa fa-bars"></i>
       </a>
