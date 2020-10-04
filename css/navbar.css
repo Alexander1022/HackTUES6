@@ -5,12 +5,13 @@ body {
   
 .nav_bar {
     background-color: #64BB6A;
+    font-family: 'Verdana', sans-serif;
     overflow: hidden;
-    font-family: 'Rubik', sans-serif;
 }
   
 .nav_bar a {
     color: #FEFED3;
+    background-color: #64BB6A;
     font-size: 20px;
     text-align: center;
     text-decoration: none;
@@ -27,18 +28,14 @@ body {
 .nav_bar .icon {
     display: none;
 }
-  
-@media screen and (max-width: 600px) {
-    .nav_bar a:not(:first-child) {}
-    
-}
-  
-@media screen and (max-width: 600px) {
-    .nav_bar.responsive {position: relative;}
-    
-}
+
 .nav_bar.responsive a {
     text-align: right;
     float: none;
     display: block;
+}
+
+  
+@media screen and (max-width: 600px) {
+    .nav_bar.responsive {position: relative;} 
 }

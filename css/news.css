@@ -20,9 +20,6 @@ body {
     position: relative;
     z-index: 1;
     display: block;
-    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.15);
-    -webkit-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.15);
-    -moz-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.15);
     transition: all 0.3s linear 0s;
     -webkit-transition: all 0.3s linear 0s;
     -moz-transition: all 0.3s linear 0s;
@@ -47,6 +44,7 @@ body {
 
 .post_module .thumbnail .date {
     color: #ffffff;
+    background-color: #024064;
     width: 55px;
     height: 55px;
     font-weight: 700;
@@ -57,19 +55,21 @@ body {
     z-index: 1;
     padding: 12.5px 0;
     border-radius: 100%;
-    -webkit-border-radius: 100%;
-    -moz-border-radius: 100%;
     box-sizing: border-box;
-    -webkti-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box; 
 }
 
 .post_module .thumbnail .date .day {
+    background-color: #024064;
     font-size: 18px;
+    border-radius: 35%;
 }
 
 .post_module .thumbnail .date .month {
+    background-color: #024064;
     font-size: 12px;
+    border-radius: 35%;
     text-transform: uppercase;
 }
 
@@ -90,7 +90,7 @@ body {
     bottom: 0;
     padding: 30px;
     box-sizing: border-box;
-    -webkti-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     transition: all 0.3s cubic-bezier(0.37, 0.75, 0.61, 1.05) 0s;
     -webkit-transition: all 0.3s cubic-bezier(0.37, 0.75, 0.61, 1.05) 0s;
@@ -101,11 +101,13 @@ body {
 
 .post_module .post_content {
     color: #999999;
+    background: #ffffff;
     margin: 30px 0 0;
 }
 
 .post_module .post_content .title {
     color: #333333;
+    background: #ffffff;
     font-size: 26px;
     font-weight: 700;
     padding: 0 0 10px;
@@ -114,6 +116,7 @@ body {
 
 .post_module .post_content .sub_title {
     color: #37782c;
+    background: #ffffff;
     font-size: 20px;
     font-weight: 400;  
     padding: 0 0 20px;
@@ -122,6 +125,7 @@ body {
 
 .post_module .post_content .description {
     color: #666666;
+    background: #ffffff;
     font-size: 14px;
     line-height: 1.8em;
     display: none;
@@ -157,7 +161,7 @@ body {
     font-weight: bold;
     padding: 0 25px;
     box-sizing: border-box;
-    -webkti-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     float: left;
     margin: 0 0 15px;

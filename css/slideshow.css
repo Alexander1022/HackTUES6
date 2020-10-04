@@ -1,11 +1,10 @@
 .simple-ss {
   width:830px;
   height:420px;
-  margin:auto ;
   margin-top: 20px;
+  margin: auto;
   background: transparent;
   background-image:url("../images/corona.jpg");
-  background-position:0;
   background-repeat:no-repeat;
   background-size:cover;
 
