@@ -10,7 +10,7 @@ var ctx = 'myChart';
 fetch('https://disease.sh/v3/covid-19/all')
 .then(response => response.json())
 .then(data => {
-    document.querySelector(".country").innerHTML = "Global";
+    document.querySelector(".country").innerHTML = "Global - today";
     document.querySelector(".act_cases").innerHTML = "New cases : +" + data['todayCases'];
     document.querySelector('.deaths').innerHTML = "Death cases : +" + data['todayDeaths'];
     document.querySelector('.recovered').innerHTML = "Recovered cases : +" + data['todayRecovered'];
@@ -125,7 +125,7 @@ button.addEventListener('click', function(name){
     fetch('https://disease.sh/v3/covid-19/countries/' + input.value)
     .then(response => response.json())
     .then(data => {
-        document.querySelector(".country").innerHTML = data['country'];
+        document.querySelector(".country").innerHTML = data['country'] + ' - today';
         document.querySelector(".act_cases").innerHTML = "New cases : +" + data['todayCases'];
         document.querySelector('.deaths').innerHTML = "Death cases : +" + data['todayDeaths'];
         document.querySelector('.recovered').innerHTML = "Recovered cases : +" + data['todayRecovered'];

@@ -2,7 +2,7 @@
   width:830px;
   height:420px;
   margin-top: 20px;
-  margin: auto;
+  margin: 0 auto;
   background: transparent;
   background-image:url("../images/corona.jpg");
   background-repeat:no-repeat;
@@ -13,6 +13,8 @@
   animation-direction: normal;
   animation-timing-function: ease;
   animation-iteration-count: infinite;
+
+
 }
 
 @keyframes slide {
