@@ -3,6 +3,7 @@
   height:420px;
   margin:auto ;
   margin-top: 20px;
+  background: transparent;
   background-image:url("../images/corona.jpg");
   background-position:0;
   background-repeat:no-repeat;

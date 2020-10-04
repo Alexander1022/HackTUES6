@@ -1,9 +1,9 @@
 body{
+    font-family: 'Verdana', sans-serif;
     box-sizing: border-box;
-    margin: 0;
     display: flex;
     flex-direction: column;
-    font-family: 'Rubik', sans-serif;
+    margin: 0;
 }
 
 .input{
@@ -17,32 +17,32 @@ input[type="text"]
 {
     width: 35%;
     min-width: fit-content;
-    min-height: 35px;
     height: 25px;
-    border: 2px solid #024064;
-    border-radius: 30px;
-    font-family: 'Rubik', sans-serif;
-    text-align: center;
+    min-height: 35px;
+    font-family: 'Verdana', sans-serif;
     font-weight: bold;
+    text-align: center;
+    border: 1px solid #024064;
+    border-radius: 20px;
     outline: none;
     transition: 0.35s;
 }
 
 input[type="Submit"]
 {
+    background-color: white;
     width: 5%;
     min-width: fit-content;
-    min-height: 35px;
     height: 25px;
-    border: 2px solid #024064;
-    border-radius: 30px;
-    font-family: 'Rubik', sans-serif;
+    min-height: 35px;
+    font-family: 'Verdana', sans-serif;
+    font-size: small;
     text-align: center;
-    font-weight: bold;
+    border: 1px solid #024064;
+    border-radius: 20px;
     outline: none;
     transition: 0.1s;
     cursor: pointer;
-    background-color: white;
 }
 
 input[type="Submit"]:hover
@@ -51,92 +51,92 @@ input[type="Submit"]:hover
 }
 
 .grid-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 0.7fr 1.3fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    gap: 0px 0px;
-    grid-template-areas:
-      "left left left right"
-      "left left left right"
-      "left left left right";
-  }
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .left { grid-area: left; }
 .right { grid-area: right; }
 
 .content {
+    justify-content: center;
     padding: 5px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
 }
 
 .div_country {
-    margin-top: 45px;
     text-align: center;
+    margin-top: 45px;
+}
+
+.country {
+    font-size: 30px;
 }
 
 .div_cases {
-    border: 5px solid #faab51;
-    border-radius: 20px;
-    margin: 20px;
+    color: #9FD983;
     background-color:white;
-    padding: 5px 5px 5px 5px;
-    font-size: 10px;
-    color: #faab51;
-    flex: 2;
+    font-size: 9px;
     text-align: center;
+    border: 3px solid #9FD983;
+    border-radius: 20px;
+    padding: 5px 5px 5px 5px;
+    flex: 2;
+    margin: 20px;
 }
 
 .div_deaths {
-    border: 5px solid #024064;
-    border-radius: 20px;
-    margin: 20px;
-    background-color:white;
-    padding: 5px 5px 5px 5px;
-    font-size: 10px;
     color: #024064;
-    flex: 2;
+    background-color:white;
+    font-size: 9px;
     text-align: center;
+    border: 3px solid #024064;
+    border-radius: 20px;
+    padding: 5px 5px 5px 5px;
+    flex: 2;
+    margin: 20px;
 }
 .div_rec {
-    border: 5px solid #64BB6A;
-    border-radius: 20px;
-    margin: 20px;
-    background-color: white;
-    padding: 5px 5px 5px 5px;
-    font-size: 10px;
-    display: flex;
     color: #64BB6A;
-    flex: 2;
+    background-color: white;
+    font-size: 9px;
     text-align: center;
+    border: 3px solid #64BB6A;
+    border-radius: 20px;
+    padding: 5px 5px 5px 5px;
+    margin: 20px;
+    display: flex;
+    flex: 2;
 }
 
 #rightChart {
-    position: flex;
     border: 2px solid red;
     max-width: 700px;
     max-height: 700px;
     font-size: 2000px;
+    position: flex;
     margin: 50px;
 }
 
 .table {
-    margin-top: 20px;
-    overflow: scroll;
     color: #6a5d5d;
     background-color: white;
     height: 400px;
-  }
+    overflow: scroll;
+    margin-top: 20px;
+}
   
-  .table tr {
-    display: flex;
+.table tr {
     justify-content: space-between;
-  }
+    display: flex;
+}
   
-  .table td {
+.table td {
     padding: 0.5rem;
     border: none;
-  }
+}
   
-  .table tr:nth-of-type(odd) {
+.table tr:nth-of-type(odd) {
     background-color: #f3f2f8;
+}
