@@ -16,3 +16,25 @@ fetch('https://newsapi.org/v2/top-headlines?country=bg&category=health&apiKey=05
     document.querySelector(".sub_title").innerHTML = '-';
     document.querySelector(".day").innerHTML = '-';
 })
+
+
+
+window.onload = function() {
+    var tips = [
+        'Clean your hands often. Use soap and water, or an alcohol-based hand rub.',
+        'Avoid close contact',
+        'Maintain a safe distance from anyone who is coughing or sneezing.',
+        'Wear a mask when physical distancing is not possible.',
+        'Don’t touch your eyes, nose or mouth.',
+        'Cover your nose and mouth with your bent elbow or a tissue when you cough or sneeze.',
+        'Stay home if you feel unwell.',
+        'If you have a fever, cough and difficulty breathing, seek medical attention.'
+    ];
+    random_tip = Math.floor(Math.random()*tips.length);
+    document.querySelector(".tips").innerHTML = tips[random_tip];
+    
+};
+
+
+
+
