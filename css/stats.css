@@ -86,9 +86,6 @@ input[type="Submit"]:hover
 
 .country {
     font-size: 30px;
-    color: #024064;
-}
-.country:hover { 
     color: black;
 }
 
