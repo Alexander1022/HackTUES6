@@ -36,7 +36,8 @@
   <meta name="msapplication-square150x150logo" content="mstile-150x150.png" />
   <meta name="msapplication-wide310x150logo" content="mstile-310x150.png" />  
   <meta name="msapplication-square310x310logo" content="mstile-310x310.png" />
-
+  <link rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.18.0/dist/bootstrap-table.min.css">
+  <script src="https://unpkg.com/bootstrap-table@1.18.0/dist/bootstrap-table.min.js"></script>
 
 </head>
 
@@ -85,8 +86,14 @@
         </div>
 
         <div class="right">
-            <div class="table">
-       
+            <div class="table" id="table">
+                <thead>
+                    <tr>
+                      <th data-field="id">ID</th>
+                      <th data-field="name">Item Name</th>
+                      <th data-field="price">Item Price</th>
+                    </tr>
+                  </thead>
             </div>
             <div class="predics">
                 <h1>Predictions for tomorrow</h1>
