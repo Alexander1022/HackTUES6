@@ -141,6 +141,7 @@ button.addEventListener('click', function(name){
 fetch('https://disease.sh/v3/covid-19/historical/' +  input.value)
 .then(response => response.json())
 .then(data => { 
+    debugger
     var keys = Object.keys(data['timeline']['cases']);
     var general_first = keys[0];
     
@@ -183,6 +184,7 @@ fetch('https://disease.sh/v3/covid-19/historical/' +  input.value)
     var weeky = String(next_day.getDate());
     var mm = String(next_day.getMonth() + 1);
     next_day_week_info = mm + '/' + weeky + '/' + '20';
+
 
     cases1 = data['timeline']['cases'][today];
     cases2 = data['timeline']['cases'][last_week_info];
@@ -301,33 +303,11 @@ fetch('https://disease.sh/v3/covid-19/historical/' +  input.value)
     document.querySelector(".act_cases").innerHTML = "-";
     document.querySelector('.deaths').innerHTML = "-";
     document.querySelector('.recovered').innerHTML = "-";
+    document.querySelector(".predics_tom").innerHTML = 'Wrong country or API is broken ';
+    document.querySelector(".predics_deaths").innerHTML = 'Wrong country or API is broken '; 
+    document.querySelector(".predics_rec").innerHTML = 'Wrong country or API is broken ';
 })
 })
-
-
-var $table = $('#table')
-var total = 0
-
-  function getData(number, isAppend) {
-    if (!isAppend) {
-      total = 0
-    }
-    var data = []
-    for (var i = total; i < total + number; i++) {
-      data.push({
-        'name': i,
-        'num': i
-      })
-    }
-   
-    $('#total').text(total)
-    return data
-  }
-
-  $(function() {
-    $table.bootstrapTable({data: getData(50)})
-
-  })
 
 
 
