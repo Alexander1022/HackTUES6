@@ -9,9 +9,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1" /> 
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
   <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script> 
-  <title>Qurantine Chat</title>
   <link rel="manifest" href="/manifest.json">
   <meta name="theme-color" content="#ffffff">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -44,7 +42,7 @@
 
 <body>
     <div class="nav_bar" id="navigation">
-        <img src="../images/COVID_NEWS-transperent2.png" style="width:200px;height:53px; margin-left: 15px; margin-top: 3px;">
+        <img src="../images/COVID_NEWS-transperent2.png" style="width:200px; height:53px; background-color: #64BB6A; margin-left: 15px; margin-top: 3px;">
         <a href="../profile_control/login.html">Login</a>
         <a href="chat.html">Chat</a>
         <a href="stats.html">Statistics</a>
@@ -80,6 +78,12 @@
         </div>
         
     </div>
+
+    <div class="hyperChart">
+        <h1>Stats about last month</h1>
+        <canvas id="myChart"></canvas>
+    </div>
+    
 
 </body>
 </html>
