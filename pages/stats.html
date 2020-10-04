@@ -15,6 +15,9 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/bootstrap-table@1.18.0/dist/bootstrap-table.min.css" rel="stylesheet">
+  <script src="https://unpkg.com/bootstrap-table@1.18.0/dist/bootstrap-table.min.js"></script>
+
   <!--- долните редове са за икона на различни у-ва-->
   <link rel="apple-touch-icon-precomposed" sizes="57x57" href="../images/apple-touch-icon-57x57.png" />
   <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../images/apple-touch-icon-114x114.png" />
@@ -85,8 +88,18 @@
         </div>
 
         <div class="right">
-            <div class="table">
-       
+            <div>
+                <table id="table"
+                    data-height="250"
+                    data-virtual-scroll="true"
+                   >
+                    <thead>
+                        <tr>
+                        <th data-field="name">Country</th>
+                        <th data-field="num">Cases</th>
+                        </tr>
+                    </thead>
+                </table>
             </div>
             <div class="predics">
                 <h1>Predictions for tomorrow</h1>
@@ -98,7 +111,6 @@
     </div>       
         
        
-    
     <script src="../sw.js"></script>
     <script src="../js/stats.js"></script>
 </body>

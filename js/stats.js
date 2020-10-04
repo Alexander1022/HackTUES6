@@ -305,5 +305,29 @@ fetch('https://disease.sh/v3/covid-19/historical/' +  input.value)
 })
 
 
+var $table = $('#table')
+var total = 0
+
+  function getData(number, isAppend) {
+    if (!isAppend) {
+      total = 0
+    }
+    var data = []
+    for (var i = total; i < total + number; i++) {
+      data.push({
+        'name': i,
+        'num': i
+      })
+    }
+   
+    $('#total').text(total)
+    return data
+  }
+
+  $(function() {
+    $table.bootstrapTable({data: getData(50)})
+
+  })
+
 
 
