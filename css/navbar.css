@@ -31,7 +31,7 @@ body {
 
 .nav_bar.responsive a {
     text-align: right;
-    float: none;
+    float: right;
     display: block;
 }
 

@@ -57,32 +57,44 @@
         <input type="submit" value="Enter" class="btn">
     </div>
 
+    
     <div class="grid-container">
-        <div class="div_country">
-            <h1 class="country">-</h1>
+        <div class="left">
+            <div class="div_country">
+                <h1 class="country">-</h1>
+            </div>
+            <div class="content">
+                <div class="div_cases">
+                    <h1 class="act_cases"> - </h1>
+                </div>
+
+                <div class="div_deaths">
+                    <h1 class="deaths"> - </h1>
+                </div>
+
+                <div class="div_rec">
+                    <h1 class="recovered"> - </h1>
+                </div> 
+            </div>
+            <div class="hyperChart">
+                <h1>Stats about last month</h1>
+                <canvas id="myChart"></canvas>
+            </div>
         </div>
-            
-        
-        <div class="content">
-            <div class="div_cases">
-                <h1 class="act_cases"> - </h1>
-            </div>
 
-            <div class="div_deaths">
-                <h1 class="deaths"> - </h1>
+        <div class="right">
+            <div class="table">
+       
             </div>
-
-            <div class="div_rec">
-                <h1 class="recovered"> - </h1>
+            <div class="predics">
+                <h1>Predictions</h1>
+                <h2 class="predics_tom">-</h2>
+                <h2 class="predics_week">-</h2>
             </div>
         </div>
+    </div>       
         
-    </div>
-
-    <div class="hyperChart">
-        <h1>Stats about last month</h1>
-        <canvas id="myChart"></canvas>
-    </div>
+       
     
 
 </body>
