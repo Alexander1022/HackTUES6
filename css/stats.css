@@ -161,16 +161,16 @@ th, td {
     position: relative;
     height:60vh; 
     width:50vw;
-    border: 1px solid black;
+    border: 2px solid black;
     margin: 0 auto !important;
     text-align: center;
+    transition: 0.3s;
 }
 
-.predics {
-    text-align: center;
-    margin: 0;
-    margin-top: 50px;
+.hyperChart:hover{ 
+    box-shadow: 0px 10px 20px 0px rgba(0,0,0,1);
 }
+
 
 .table {
     margin-top: 20px;
@@ -180,7 +180,12 @@ th, td {
     background-color: white;
     height: 400px;
     border: 2px solid black;
+    transition: 0.3s;
   }
+
+.table:hover {
+    box-shadow: 0px 10px 20px 0px rgba(0,0,0,1);
+}
   
   .table tr {
     display: flex;
@@ -195,3 +200,16 @@ th, td {
   .table tr:nth-of-type(odd) {
     background-color: #f3f2f8;
   }
+
+.predics {
+    border: 2px solid black;
+    margin: 0 auto;
+    text-align: center;
+    margin: 0;
+    margin-top: 50px;
+    transition: 0.3s;
+  }
+
+.predics:hover {
+    box-shadow: 0px 10px 20px 0px rgba(0,0,0,1);
+}

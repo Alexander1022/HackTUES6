@@ -138,7 +138,7 @@ button.addEventListener('click', function(name){
         document.querySelector('.recovered').innerHTML = "-";
     })
 
-    fetch('https://disease.sh/v3/covid-19/historical/' +  input.value)
+fetch('https://disease.sh/v3/covid-19/historical/' +  input.value)
 .then(response => response.json())
 .then(data => { 
     var keys = Object.keys(data['timeline']['cases']);
@@ -163,6 +163,43 @@ button.addEventListener('click', function(name){
     console.log(data['timeline']['deaths'][death_last]);
     console.log(data['timeline']['recovered'][rec_first]);
     console.log(data['timeline']['recovered'][rec_last]);
+
+
+    var today = new Date();
+    var dd = String(today.getDate() - 1);
+    var mm = String(today.getMonth() + 1);
+    today = mm + '/' + dd + '/' + '20';
+
+    var tomorrow_last_week = new Date();
+    var pastDate = tomorrow_last_week.getDate() - 7;
+    tomorrow_last_week.setDate(pastDate);
+    var last_week_day = String(tomorrow_last_week.getDate() - 1);
+    var mm = String(tomorrow_last_week.getMonth() + 1);
+    last_week_info = 9 + '/' + last_week_day + '/' + '20';
+
+    var next_day = new Date();
+    var pastDate = next_day.getDate() - 7;
+    next_day.setDate(pastDate);
+    var weeky = String(next_day.getDate());
+    var mm = String(next_day.getMonth() + 1);
+    next_day_week_info = mm + '/' + weeky + '/' + '20';
+
+    cases1 = data['timeline']['cases'][today];
+    cases2 = data['timeline']['cases'][last_week_info];
+    cases3 = data['timeline']['cases'][next_day_week_info];
+
+    death1 = data['timeline']['deaths'][today];
+    death2 = data['timeline']['deaths'][last_week_info];
+    death3 = data['timeline']['deaths'][next_day_week_info];
+
+    rec1 = data['timeline']['recovered'][today];
+    rec2 = data['timeline']['recovered'][last_week_info];
+    rec3 = data['timeline']['recovered'][next_day_week_info];
+
+
+    document.querySelector(".predics_tom").innerHTML = 'New general cases : ' + ~~(cases1 / cases2 * cases3);
+    document.querySelector(".predics_deaths").innerHTML = 'New death cases : ' + ~~(death1 / death2 * death3); 
+    document.querySelector(".predics_rec").innerHTML = 'New recovered cases : ' + ~~(rec1 / rec2 * rec3);
 
     var myLineChart = new Chart(ctx, {
         type: 'line',
@@ -259,8 +296,14 @@ button.addEventListener('click', function(name){
     });
 })
 
+.catch(err => {
+    document.querySelector(".country").innerHTML = "Invalid country name or problem with API";
+    document.querySelector(".act_cases").innerHTML = "-";
+    document.querySelector('.deaths').innerHTML = "-";
+    document.querySelector('.recovered').innerHTML = "-";
+})
+})
 
-    })
 
 
 
