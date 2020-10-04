@@ -197,9 +197,9 @@ fetch('https://disease.sh/v3/covid-19/historical/' +  input.value)
     rec3 = data['timeline']['recovered'][next_day_week_info];
 
 
-    document.querySelector(".predics_tom").innerHTML = 'New general cases : ' + ~~(cases1 / cases2 * cases3);
-    document.querySelector(".predics_deaths").innerHTML = 'New death cases : ' + ~~(death1 / death2 * death3); 
-    document.querySelector(".predics_rec").innerHTML = 'New recovered cases : ' + ~~(rec1 / rec2 * rec3);
+    document.querySelector(".predics_tom").innerHTML = 'General cases : ' + ~~(cases1 / cases2 * cases3);
+    document.querySelector(".predics_deaths").innerHTML = 'Death cases : ' + ~~(death1 / death2 * death3); 
+    document.querySelector(".predics_rec").innerHTML = 'Recovered cases : ' + ~~(rec1 / rec2 * rec3);
 
     var myLineChart = new Chart(ctx, {
         type: 'line',

@@ -168,7 +168,7 @@ th, td {
 }
 
 .hyperChart:hover{ 
-    box-shadow: 0px 10px 20px 0px rgba(0,0,0,1);
+    box-shadow: 5px 7px 12px 0px rgba(107,107,107,1);
 }
 
 
@@ -184,7 +184,7 @@ th, td {
   }
 
 .table:hover {
-    box-shadow: 0px 10px 20px 0px rgba(0,0,0,1);
+    box-shadow: 5px 7px 12px 0px rgba(107,107,107,1);
 }
   
   .table tr {
@@ -211,5 +211,5 @@ th, td {
   }
 
 .predics:hover {
-    box-shadow: 0px 10px 20px 0px rgba(0,0,0,1);
+    box-shadow: 5px 7px 12px 0px rgba(107,107,107,1);
 }
