@@ -1,5 +1,5 @@
 # HackTUES 6
-
+Link for [Google Slides](https://docs.google.com/presentation/d/13tVIq0IU1mZ3eG5fXpcDRlwfybZH8tpeum0B92SlgcM/edit?usp=sharing).
 Here you can find our job from the hackathon :)
 
 ## About
