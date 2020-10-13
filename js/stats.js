@@ -176,7 +176,7 @@ fetch('https://disease.sh/v3/covid-19/historical/' +  input.value)
     tomorrow_last_week.setDate(pastDate);
     var last_week_day = String(tomorrow_last_week.getDate() - 1);
     var mm = String(tomorrow_last_week.getMonth() + 1);
-    last_week_info = 9 + '/' + last_week_day + '/' + '20';
+    last_week_info = 10 + '/' + last_week_day + '/' + '20';
 
     var next_day = new Date();
     var pastDate = next_day.getDate() - 7;
