@@ -1,6 +1,8 @@
 .simple-ss {
+  display: flex;
   width:830px;
   height:420px;
+  max-width: 100%;
   margin: auto;
   margin-top: 20px;
   background: transparent;
@@ -14,7 +16,9 @@
   animation-timing-function: ease;
   animation-iteration-count: infinite;
 
-
+  border: 2px solid white;
+  padding: auto;
+  
 }
 
 @keyframes slide {

@@ -3,20 +3,31 @@ body{
     box-sizing: border-box;
     flex-direction: column;
     margin: 0;
-    background: rgb(221,211,211);
-    background: linear-gradient(0deg, rgba(221,211,211,1) 0%, rgba(255,255,255,1) 45%);     
+    background: #6A2E35;  
     display: flex;
+    overflow: scroll;
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
 }
 
 .input{
     justify-content: center;
     text-align: center;
     padding-top: 20px;
+    display: block;
 }
 
 
 input[type="text"]
 {
+    background: #AF1B3F;
+    color: white;
+    border: none;
+    outline:none;
     width: 35%;
     min-width: fit-content;
     height: 25px;
@@ -24,51 +35,52 @@ input[type="text"]
     font-family: 'Rubik', sans-serif;
     font-weight: bold;
     text-align: center;
-    border: 1px solid #024064;
     border-radius: 20px;
-    outline: none;
-    transition: 0.35s;
 }
+
+input[type="text"]::placeholder { 
+    color: white;
+  }
 
 input[type="Submit"]
 {
-    background-color: white;
+    background: #6A2E35;
+    border: none;
+    outline:none;
+    color: white;
     width: 5%;
     min-width: fit-content;
     height: 25px;
     min-height: 35px;
     font-family: 'Rubik', sans-serif;
-    font-size: small;
     text-align: center;
-    border: 1px solid #024064;
     border-radius: 20px;
-    outline: none;
-    transition: 0.1s;
+    overflow: scroll;
+    scroll-behavior: smooth;
+    font-size: 15px;
     cursor: pointer;
-}
-
-input[type="text"]:hover
-{
-    border: 3px solid rgb(1, 47, 73);
-}
-
-input[type="Submit"]:hover
-{
-    border: 3px solid rgb(1, 47, 73);
 }
 
 .grid-container {
     display: grid;
-    grid-template-columns: 1fr 1fr 0.7fr 1.3fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 1fr;
     gap: 0px 0px;
     grid-template-areas:
-      "left left left right"
-      "left left left right"
-      "left left left right";
-  }
-  .left { grid-area: left; }
-  .right { grid-area: right; }
+        "left left right";
+    padding: 10px;
+}
+
+
+.left { 
+    grid-area: left;
+}
+
+.right { 
+    grid-area: right;
+}
 
 .content {
     justify-content: center;
@@ -81,12 +93,11 @@ input[type="Submit"]:hover
 .div_country {
     text-align: center;
     margin-top: 45px;
-    transition: 1s;
 }
 
 .country {
     font-size: 30px;
-    color: black;
+    color: white;
 }
 
 .div_cases {
@@ -94,53 +105,37 @@ input[type="Submit"]:hover
     background-color:#048ba8;
     font-size: 9px;
     text-align: center;
-    border: 3px solid #048ba8;
+    border: 3px solid white;
     border-radius: 20px;
     padding: 5px 5px 5px 5px;
     flex: 2;
     margin: 20px;
 }
 
-.div_cases:hover {
-    border: 3px solid black;
-    transition-timing-function: ease-in-out;
-    transition: 0.35s;
-}
 
 .div_deaths {
     color: white;
     background-color: #e63946;
     font-size: 9px;
     text-align: center;
-    border: 3px solid #e63946;
+    border: 3px solid white;
     border-radius: 20px;
     padding: 5px 5px 5px 5px;
     flex: 2;
     margin: 20px;
 }
 
-.div_deaths:hover {
-    border: 3px solid black;
-    transition-timing-function: ease-in-out;
-    transition: 0.35s;
-}
 
 .div_rec {
     color: white;
     background-color: #2a9d8f;
     font-size: 9px;
     text-align: center;
-    border: 3px solid #2a9d8f;
+    border: 3px solid white;
     border-radius: 20px;
     padding: 5px 5px 5px 5px;
     margin: 20px;
     flex: 2;
-}
-
-.div_rec:hover {
-    border: 3px solid black;
-    transition-timing-function: ease-in-out;
-    transition: 0.35s;
 }
 
 
@@ -148,34 +143,20 @@ input[type="Submit"]:hover
     position: relative;
     height:60vh; 
     width:50vw;
-    border: 2px solid black;
+    border: 2px solid white;
+    background: white;
     margin: 0 auto !important;
-    text-align: center;
-    transition: 0.3s;	
-}
-
-.hyperChart:hover{ 	
-    box-shadow: 5px 7px 12px 0px rgba(107,107,107,1);	
+    text-align: center;	
 }
 
 .predics {	
-    border: 2px solid black;		
+    background: white;
+    border: 2px solid white;		
     text-align: center;	        
     margin: 0 auto;
     margin-top: 50px;	    
-    transition: 0.3s;
 }	
-
-.predics:hover {	
-    box-shadow: 5px 7px 12px 0px rgba(107,107,107,1);	
-} 
 
 .map_stats {
     margin-top: 50px;
-    border: 2px solid black;
-    transition: 0.3s;
-}
-
-.map_stats:hover{
-    box-shadow: 5px 7px 12px 0px rgba(107,107,107,1);
 }

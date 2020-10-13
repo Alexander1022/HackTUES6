@@ -120,7 +120,8 @@ fetch('https://disease.sh/v3/covid-19/historical/')
     });
 })
 
-button.addEventListener('click', function(name){
+button.addEventListener('click', function(name)
+{
     console.log('The location is ' + input.value);
     fetch('https://disease.sh/v3/covid-19/countries/' + input.value)
     .then(response => response.json())

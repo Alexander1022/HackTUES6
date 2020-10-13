@@ -4,11 +4,13 @@ body {
 }
   
 .nav_bar {
-    background-color: #64BB6A;
+    background-color: #473144;
     font-family: 'Rubik', sans-serif;
     overflow: hidden;
     display: flex;
     justify-content: space-between;
+    padding: 0;
+    border-radius: 50px;
 }
   
 .nav_bar a {
@@ -22,8 +24,8 @@ body {
 }
   
 .nav_bar a:hover {
-    color: #37782C;
-    background-color: #9FD983;    
+    color: white;
+    background-color: #DF9B6D;    
 }
 
 .nav_bar .icon {
