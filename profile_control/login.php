@@ -2,7 +2,7 @@
 session_start();
 // Checks if the user is already logged
 if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
-    header("location: ../index.html");
+    header("location: ../index.php");
     exit;
 }
 require_once "../db_connect.php";
@@ -46,7 +46,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
                         if($password == $hashed_password){
                             session_start();
-                            $_SESSION["loggedin"] = true;
+                            $_SESSION["loggedin"] = 1;
                             $_SESSION["id"] = $id;
                             $_SESSION["username"] = $username;
                             header("location: ../index.php");

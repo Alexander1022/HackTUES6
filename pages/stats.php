@@ -7,9 +7,9 @@
   <link rel="stylesheet" href="../css/navbar.css">
   <script type='text/javascript' src='https://cdn.scaledrone.com/scaledrone.min.js'></script>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1" /> 
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script> 
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
   <link rel="manifest" href="/manifest.json">
   <meta name="theme-color" content="#ffffff">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -35,7 +35,7 @@
   <meta name="msapplication-TileImage" content="mstile-144x144.png" />
   <meta name="msapplication-square70x70logo" content="mstile-70x70.png" />
   <meta name="msapplication-square150x150logo" content="mstile-150x150.png" />
-  <meta name="msapplication-wide310x150logo" content="mstile-310x150.png" />  
+  <meta name="msapplication-wide310x150logo" content="mstile-310x150.png" />
   <meta name="msapplication-square310x310logo" content="mstile-310x310.png" />
 
 
@@ -43,24 +43,35 @@
 
 <body>
     <div class="nav_bar" id="navigation">
-        <img src="../images/COVID_NEWS-transperent2.png" style="width:200px; height:53px; margin-left: 15px; margin-top: 3px;">
-        <div> 
-            <a href="../profile_control/login.html">Login</a>
-            <a href="chat.html">Chat</a>
-            <a href="stats.html">Statistics</a>
-            <a href="../index.html">News</a>
+        <img src="../images/COVID_NEWS-transperent2.png" style="width:200px; height:53px;  background-color: #64BB6A; margin-left: 15px; margin-top: 3px;">
+        <div>
+            <?php
+            session_start();
+            if ($_SESSION['loggedin'] == 1) {
+                  echo('
+                  <a><form class="" action="../" method="post">
+                      <input type="hidden" name="logout" value="true">
+                      <input type="submit" name="submit" value="Logout">
+                  </form></a>
+                  ');
+            } else {
+                  echo('<a href="../profile_control/login.php">Login</a>');
+            }?>
+            <a href="chat.php">Chat</a>
+            <a href="stats.php">Statistics</a>
+            <a href="../">News</a>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                 <i class="fa fa-bars"></i>
             </a>
-        </div> 
+        </div>
     </div>
 
     <div class="input">
-        <input type="text" placeholder="Enter a location" class="in_value">
-        <input type="submit" value="Search" class="btn">
+        <input type="text" placeholder="Enter a location to show info" class="in_value">
+        <input type="submit" value="Enter" class="btn">
     </div>
 
-    
+
     <div class="grid-container">
         <div class="left">
             <div class="div_country">
@@ -77,7 +88,7 @@
 
                 <div class="div_rec">
                     <h1 class="recovered"> - </h1>
-                </div> 
+                </div>
             </div>
             <div class="hyperChart">
                 <h1>Stats about last month</h1>
@@ -97,12 +108,10 @@
                 <h2 class="predics_rec">-</h2>
             </div>
         </div>
-    </div>       
-        
-       
+    </div>
+
+
     <script src="../sw.js"></script>
     <script src="../js/stats.js"></script>
 </body>
 </html>
-
-

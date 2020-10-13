@@ -1,7 +1,7 @@
 var cacheName = 'covidnews_hacktues';
 var filesToCache = [
     '/',
-    'index.html',
+    'index.php',
     'css/style.css',
     'js/script.js',
     'db_setup.sql',
